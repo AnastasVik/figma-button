@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/*--------------*/
+/*Источник: https://codepen.io/baradusov/pen/RJGZrN*/
+/**
+ * Сброс стилей у кнопки.
+ * Придётся немного поработать, чтобы получить нейтральный вид.
+*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:bold;
+}
+.figma-knopka {
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* отображаем курсор в виде руки при наведении; некоторые
+  считают, что необходимо оставлять стрелочный вид для кнопок */
+  cursor: pointer;
+/*-Mine-*/
+  padding: 10px;
+  position: absolute;
+  width: 160px;
+  padding:10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  border-radius: 10px;
+  background: #D61818;
+  color: white;
+/*-Mine's end-*/
+}
+/*--------------------------------*/
+.figma-knopka:hover {
+  background-color: #F82C2C;
+  cursor: pointer;
+}
+
+.figma-knopka:active {
+  background-color: #9E1818;
+}
+
+.figma-knopka:focus {
+  outline:1px #340808 solid;
+}
+
+.figma-knopka[disabled] {
+    background: #A4A4A4;
+    cursor: not-allowed;
+}
