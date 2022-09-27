@@ -4,13 +4,22 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.fishText {
+  text-indent: 215px;
+}
+
 .figma-button {
+  border: none;
   min-width: 160px;
   padding: 10px;
   border-radius: 10px;
   background: #d61818;
   color: white;
   font-size: 20px;
+}
+
+.figma-button:focus {
+  outline: 1px solid #242424;
 }
 
 .figma-button:hover {
